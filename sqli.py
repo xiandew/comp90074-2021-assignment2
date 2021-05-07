@@ -26,8 +26,8 @@ def crack(query, charset):
                 print(f"Index {i}; Not {c}")
 
             # Make sure of less than 30 requests per minute
-            time.sleep(2)
             print("Sleeping")
+            time.sleep(2)
 
         t = "".join(answer_arr)
         # print(t, answer)
